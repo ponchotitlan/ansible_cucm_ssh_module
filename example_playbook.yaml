@@ -1,0 +1,13 @@
+- name: CUCM SSH Connector 
+  hosts: cucm
+  connection: local
+  gather_facts: no
+  tasks:
+    - name: Get CUCM DB Replication status
+      cucm_module:
+        cucm_ip: "{{ansible_ssh_host}}"
+        cucm_user: "{{ansible_user}}"
+        cucm_pwd: "{{ansible_ssh_pass}}"
+        cucm_option: "DBREPLICATION"
+      register: result
+    - debug: var=result
