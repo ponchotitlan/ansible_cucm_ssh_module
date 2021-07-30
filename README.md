@@ -1,5 +1,8 @@
 # ansible_cucm_ssh_module
-**---- SSH connector to CUCM (CallManager) with bundled operations and output parsing ----**
+
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+
+SSH connector to CUCM (CallManager) with bundled operations and output parsing
 
 This is an Ansible module which connects to the target CUCM servers via SSH in order to execute CLI commands and gather outputs.
 The current version supports the following commands:
